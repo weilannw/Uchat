@@ -1,0 +1,64 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <constant name="struts.ui.theme" value="css_xhtml" />
+    <package name="default" extends="struts-default">
+        <action name="reg" class="action.RegisterAction">
+            <result name="success">/registrationSuccess.jsp</result>
+            <result name="input">/index.jsp</result>
+        </action>
+        <action name="log" class="action.LoginAction">
+            <result name="success">/profileView.jsp</result>
+            <result name="input">/index.jsp</result>
+        </action>
+        <action name="editProfile" class="action.EditProfileAction">
+            <result name="success">/profileView.jsp</result>            
+            <result name="input">/profileView.jsp</result>
+        </action>
+        <action name="forgot" class="action.ForgotPasswordAction">
+            <result name="success">/forgotSuccess.jsp</result>
+            <result name="input">/forgotPassword.jsp</result>
+        </action>
+        <action name="code" class="action.LoginCodeAction">
+            <result name="success">/profileView.jsp</result>
+            <result name="input">/forgotSuccess.jsp</result>
+        </action>
+        <action name="changePass" class="action.ChangePasswordAction">
+            <result name="success">/profileView.jsp</result>
+            <result name="input">/profileView.jsp</result>
+        </action>
+        <action name="receivetexts" class="action.ReceiveTextsAction">
+            <result type="stream">
+                <param name="contentType">text/html</param>
+                <param name="inputName">inputStream</param>
+            </result>
+
+            <!--<result name="success" type="httpheader">
+                <param name="status">200</param>
+            </result>
+            <result name="error" type="httpheader">
+                <param name="status">201</param>
+            </result>-->
+        </action> 
+        <action name="sendtext" class="action.SendTextAction">
+            <result name="success" type="httpheader">
+                <param name="status">200</param>
+            </result>
+            <result name="error" type="httpheader">
+                <param name="status">201</param>
+            </result>
+        </action>
+        <action name="voteontext" class="action.VoteOnTextAction">
+            <result name="success" type="httpheader">
+                <param name="status">200</param>
+            </result>
+            <result name="error" type="httpheader">
+                <param name="status">201</param>
+            </result>
+        </action>
+        
+    </package>
+</struts>

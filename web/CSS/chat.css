@@ -1,0 +1,133 @@
+html{
+  color: white;
+}
+.header{
+    font-size: 40px;
+    color:whitesmoke;
+}
+#chat-window{
+ position:relative;
+ bottom:0;
+ width: 100%;
+ 
+}
+
+#chat{
+  margin-top: 100px;
+  margin-right: 60px;
+  margin-bottom: 60px;
+  margin-left: 60px;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
+  background:white;
+  padding-top: 0px;
+  padding-right: 50px;
+  padding-bottom: 0px;
+  padding-left: 50px;
+  border:1px blue;
+  height:500px;
+  overflow-y:auto;
+}
+.usr{
+    font-size:22px;
+    color: blue;
+    
+}
+.msg{
+    padding-left: 20px;
+    font-size:18.5px;
+}
+#text-entry #text-field{
+    width:100%;
+}
+#text-entry{
+    padding:20px;
+    position:relative;
+    bottom:0;
+    width:100%;
+    display:inline-block;
+}
+#text-entry textarea{
+    border-radius:10px;
+    width:100%;
+    resize:none;
+}
+.message{
+  padding-bottom:10px;
+  padding-top:5px;
+  display:block;
+  border-bottom: solid lightgray 1px;
+}
+.message div{
+    display:inline-block;
+}
+.message votes{
+    position:fixed;
+    
+}
+.message .num-votes{
+    padding:none;
+    font-size:19px;
+    color: blue;
+}
+.votes a:link{
+    text-decoration:none;
+}
+.chat-box-footer {
+background-color: #D8D8D8;
+padding: 10px;
+}
+.input-group-addon,
+.input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.input-group .form-control {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+
+.votes{
+    position: relative;
+    float: right;
+}
+.up{
+    content: "\f000";
+}
+//SCROLL
+.scroll {
+  width: 20px;
+  height: 200px;
+  overflow: auto;
+  float: right;
+  margin: 0 10px;
+}
+
+.scroll5::-webkit-scrollbar {
+  width: 15px;
+}
+ 
+.scroll5::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+.scroll5::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+.scroll5::-webkit-scrollbar-button {
+  background: #666;
+  height: 15px;
+  border-radius: 50%;
+}
+
+
